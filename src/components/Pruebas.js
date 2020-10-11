@@ -48,6 +48,7 @@ class Pruebas extends Component{
       <button className="btn btn-outline-success my-2 my-sm-0" type="submit">buscar</button>
       
       <Faceboook/>
+      <button className="btn btn-outline-primary my-2 my-sm-0" type="submit">cerrar sesion</button>
     </form>
   </div>
   
