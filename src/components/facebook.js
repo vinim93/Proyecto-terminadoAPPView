@@ -31,25 +31,37 @@ export default class Facebook extends Component {
       fbContent = (
         <div
           style={{
-            width: "400px",
-            margin: "auto",
-            background: "#f4f4f4",
-            padding: "20px"
+            width: "1px!important",
+            margin: "10px!important",
+            background: "dark",
+            padding: "1px!important",
+            color:"white"
           }}
         >
-          <img src={this.state.picture} alt={this.state.name} />
-          <h2>Welcome {this.state.name}</h2>
-          Email: {this.state.email}
+          <section className="thumb   d-flex">
+
+
+
+          <img src={this.state.picture}className="btn btn-outline-primary my-2 my-sm-0 form-inline"  alt={this.state.name}/>
+          <p className="texto-fa"> {this.state.name} 
+          </p>
+          </section>
         </div>
       );
     } else {
       fbContent = (
         <FacebookLogin
-          appId="189486938370592"
-          autoLoad={true}
+          appId="996787734079917"
+          autoLoad={false}
           fields="name,email,picture"
-          onClick={this.componentClicked}
+         
           callback={this.responseFacebook}
+             textButton="inicia sesion con Facebook"
+          icon="fa-facebook"
+          cssClass="boton-login"
+    
+                  
+        
         />
       );
     }

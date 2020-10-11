@@ -7,6 +7,7 @@ import * as $ from "jquery"
 import Peliculas from './Peliculas';
 import Series from './Series';
 import Animes from './Animes';
+import Facebook from './Facebook';
 import {
   BrowserRouter as Router,
   Switch,
@@ -45,6 +46,8 @@ class Pruebas extends Component{
     <form className="form-inline my-2 my-lg-0">
       <input className="form-control mr-sm-2" type="search" placeholder="buscar"></input>
       <button className="btn btn-outline-success my-2 my-sm-0" type="submit">buscar</button>
+      
+      <Facebook  />
     </form>
   </div>
   

@@ -19,6 +19,7 @@ class Series extends Component{
     render(){
         return (
             <div className="container ">
+               <div className="row">
                  <section className="col-md-9 cards-anime d-flex img-fluid">
               < div className="card cards-anime" >
               <NavLink to="./Reproductor">
@@ -120,6 +121,7 @@ class Series extends Component{
                    </div> 
 
                    </section>
+                   </div>
             </div>
         )
     }

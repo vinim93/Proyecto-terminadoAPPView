@@ -2,7 +2,18 @@
   text-align: center;
   
 }
-
+.boton-login{
+  width: 250px!important;
+  background:#4c69ba;
+  color: white;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 100px;
+  
+}
+.texto-fa{
+  margin-top: 20px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
