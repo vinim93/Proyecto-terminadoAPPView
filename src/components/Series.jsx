@@ -18,7 +18,7 @@ import anime from '../anime.webp';
 class Series extends Component{
     render(){
         return (
-            <div className="container ">
+            <div className="container clearfix ">
                <div className="row">
                  <section className="col-md-9 cards-anime d-flex img-fluid">
               < div className="card cards-anime" >
