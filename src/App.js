@@ -15,7 +15,7 @@ import Animes from "./components/Animes";
 import Reproductor from "./components/Reproductor";
 import Plantilla from "./components/Plantilla";
 import Pruebas from "./components/Pruebas";
-
+import FacebookLogin from "react-facebook-login";
 import Footer from './components/Footer';
 import ReactTooltip from 'react-tooltip';
 import Facebook from './components/Facebook';
