@@ -19,6 +19,7 @@ import FacebookLogin from "react-facebook-login";
 import Footer from './components/Footer';
 import ReactTooltip from 'react-tooltip';
 import Faceboook from './components/Faceboook';
+import Politicadeprivacidad from './components/Politicadeprivacidad';
 
 
 function App(){
@@ -40,6 +41,7 @@ function App(){
         <Route path="/Series"> <Series/></Route>
         <Route path="/Animes"> <Animes/></Route>
         <Route path="/Reproductor"><Reproductor/></Route>
+        <Route path="/Politicadeprivacidad"> <Politicadeprivacidad/></Route>
         <Route path="/" exact><Plantilla/></Route>
       </Switch>
       
