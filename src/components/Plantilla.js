@@ -20,6 +20,7 @@ import ready from '../ready.webp';
 
 
 
+
 class Plantilla extends Component{
     render(){
         return(
@@ -27,9 +28,9 @@ class Plantilla extends Component{
             
             
              <div className="container clearfix">
-                 <div id="carouselExampleControls" className="carousel slide d-flex side-barr" data-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active "data-duration="150">
+                 <div id="carouselExampleControls" className="carousel slide d-flex " data-ride="carousel">
+  <div className="carousel-inner side-barr">
+    <div className="carousel-item active  "data-duration="150">
       <img className="d-block w-100" src={"https://www.10wallpaper.com/wallpaper/1366x768/1805/2018_Ready_Player_One_4K_HD_Movies_1366x768.jpg"} alt="First slide"></img>
     </div>
     <div className="carousel-item">

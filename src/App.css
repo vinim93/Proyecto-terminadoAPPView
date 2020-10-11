@@ -105,7 +105,7 @@ flex-wrap: wrap;
   .side-barr{
     margin: 0;
     padding: 0;
-    height: 400px;
+    height: 400px!important;
   }
   .nm-footer:hover{
     color: red;

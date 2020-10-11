@@ -18,6 +18,7 @@ import Pruebas from "./components/Pruebas";
 
 import Footer from './components/Footer';
 import ReactTooltip from 'react-tooltip';
+import Facebook from './components/facebook';
 
 
 function App(){
@@ -43,7 +44,7 @@ function App(){
       </Switch>
       
       
-      
+      <Facebook/>
       <Footer/>
     </div>
     </Router>
