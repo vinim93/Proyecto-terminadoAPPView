@@ -28,7 +28,7 @@ class Animes extends Component{
         return (
             <div className="container clearfix ">
       <div className="row">
-                <section className="col-md-9 col-sm-9 col-xs-9 cards-anime d-flex img-fluid">
+                <section className="col-md-9 col-sm-9 col-12 cards-anime d-flex img-fluid">
               <                div className="card cards-anime" >
                              <NavLink to="./Reproductor">
                     <img className="card-img-top zoom size-img " src={anime} data-tip data-for="anime" alt="anime"></img>
