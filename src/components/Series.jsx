@@ -18,9 +18,9 @@ import anime from '../anime.webp';
 class Series extends Component{
     render(){
         return (
-            <div className="container clearfix ">
+            <div className="container clearfix">
                <div className="row">
-                 <section className="col-md-9 cards-anime d-flex img-fluid">
+                 <section className="col-md-9 col-sm-10 col-12 cards-anime d-flex img-fluid">
               < div className="card cards-anime" >
               <NavLink to="./Reproductor">
                     <img className="card-img-top zoom size-img " src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR96MUkWdRJhNAAlCYY9oZrALnmgcrq2_UdSTDQjcbhDmo_FRaoPMdcAr5iLg&s=10"} data-tip data-for="anime" alt="Card image cap"></img>
