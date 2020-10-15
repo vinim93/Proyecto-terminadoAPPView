@@ -17,8 +17,7 @@ import Peliculas from './Peliculas';
 import aven from '../aven.webp';
 import among from '../among.webp';
 import ready from '../ready.webp';
-
-
+import Pruebas from './Pruebas'
 
 
 class Plantilla extends Component{
@@ -28,6 +27,7 @@ class Plantilla extends Component{
             
             
              <div className="container clearfix">
+                  
                  <div id="carouselExampleControls" className="carousel slide d-flex " data-ride="carousel">
   <div className="carousel-inner side-barr">
     <div className="carousel-item active  "data-duration="150">
@@ -142,7 +142,7 @@ class Plantilla extends Component{
                          </div>
                          <div className="sinopsis">description</div>
                      </div>
-
+                   
                  </div>
                 </aside>
 

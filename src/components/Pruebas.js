@@ -1,10 +1,16 @@
 import React, {Component} from "react";
+import Login from '../Login';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css';
+import Hero from '../Hero';
+import fire from '../fire';
 //import jquery from "jquery";
 //import $ from "jquery";
 import * as $ from "jquery"
 import Peliculas from './Peliculas';
+import logo from "../logo.svg";
+import ReactDOM from "react-dom";
+import App from "../App"
 import Series from './Series';
 import Animes from './Animes';
 import Faceboook from './Faceboook';
@@ -15,10 +21,21 @@ import {
   Link,
   NavLink
 } from 'react-router-dom';
+import handleSignout from '../App'
 
 
 class Pruebas extends Component{
+ 
+  state={isPasswordShow: false
+  }
+  tooglePasswordVisiblity =()=>{
+    const {isPasswordShow}= this.state;
+    this.setState({isPasswordShow: !isPasswordShow});
+  }; 
+
     render(){
+      const {isPasswordShow}= this.state;
+      
         return(
             
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -45,17 +62,41 @@ class Pruebas extends Component{
           </ul>
     <form className="form-inline my-2 my-lg-0">
       <input className="form-control mr-sm-2" type="search" placeholder="buscar"></input>
-      <button className="btn btn-outline-success my-2 my-sm-0" type="submit">buscar</button>
+      <button className="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal" data-target="#Registro-modal">buscar</button>
       
       <Faceboook/>
-      <button className="btn btn-outline-primary my-2 my-sm-0" type="submit">cerrar sesion</button>
+    
+     
     </form>
+   
   </div>
-  
+  {/*--------------------modal---------------------------*/}
+<div className="modal fade" id="Registro-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="Registro">Modal title</h5>
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+        <form id="Registrate-form">
+          <div className="form-group">
+          
+          </div>
+          
+          <Hero />
+        </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
   </div>
 </nav>
 
-        )
+        )  
     }
 }
 

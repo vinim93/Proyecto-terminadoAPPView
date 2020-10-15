@@ -11,18 +11,21 @@ import {
     Link,
     NavLink
   } from "react-router-dom";
+import Hero from "../Hero";
+import Login from '../Login'
 
 class Footer extends Component{
     render(){
         return(
-<footer className="footer page-footer">
+<footer className="footer page-footer fixed-bottom">
              <div className="container">
                  <h5>Todo  los derechos reservados<span className="nm-footer"> Appreview          <img className="img-fluid zoom img-face" src={facebook} data-tip data-for=""></img></span></h5>
-                 
+                 <Hero/>
                  
                  
                  <section>
                  <NavLink to="./Politicadeprivacidad" className="footer"><h5>Politicadeprivacidad</h5></NavLink>
+                
                      </section> 
              </div>
             </footer>
