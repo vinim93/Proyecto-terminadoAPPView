@@ -17,10 +17,10 @@ import Login from '../Login'
 class Footer extends Component{
     render(){
         return(
-<footer className="footer page-footer fixed-bottom">
+<footer className="footer page-footer fixed">
              <div className="container">
                  <h5>Todo  los derechos reservados<span className="nm-footer"> Appreview          <img className="img-fluid zoom img-face" src={facebook} data-tip data-for=""></img></span></h5>
-                 <Hero/>
+                 
                  
                  
                  <section>
