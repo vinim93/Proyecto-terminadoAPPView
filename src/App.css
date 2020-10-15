@@ -100,7 +100,9 @@ flex-wrap: wrap;
 .poster{
   height: 10px;
 }
-
+nav {
+z-index: 2!important;
+}
 .sinopsis {
  margin-top: 10px;
 }
@@ -186,10 +188,12 @@ body{
   cursor: pointer!important;
 }
 .button-Login-op{
-  display: flex;
-  z-index: 1;
-  position: absolute;
-  left: 1450px;
+  
+  z-index: 1!important;
+  
+  margin-top: -10px;
+  padding-top: -10;
+  left: 1250px;
   top: 8px;
   border-radius: 5px;
   
